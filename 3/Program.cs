@@ -11,9 +11,9 @@ namespace _3
             bool parse = false, condition = true;
             while (condition)
             {
-                Console.WriteLine("Введите натуральное число А>1");
+                Console.WriteLine("Введите натуральное число А>1 A<10");
                 parse = Int32.TryParse(Console.ReadLine(),out A);
-                if(A>1 && parse==true)
+                if(A>1 && A<10 && parse==true)
                 {
                     condition = false;
                 }
@@ -21,9 +21,9 @@ namespace _3
             condition = true;
             while (condition)
             {
-                Console.WriteLine("Введите натуральное число B<10");
+                Console.WriteLine("Введите натуральное число B>1 B<10");
                 parse = Int32.TryParse(Console.ReadLine(), out B);
-                if (B>0 && B < 10 && parse==true)
+                if (B>1 && B < 10 && parse==true)
                 {
                     condition = false;
                 }
